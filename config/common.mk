@@ -94,8 +94,10 @@ EXCLUDE_SYSTEMUI_TESTS := true
 # include definitions for SDCLANG
 include vendor/revengeos/build/sdclang/sdclang.mk
 
+ifeq ($(BUILD_GAPPS), true)
 # GApps
 include vendor/gapps/config.mk
+endif
 
 # RevengeUI
 include vendor/revengeui/config.mk
