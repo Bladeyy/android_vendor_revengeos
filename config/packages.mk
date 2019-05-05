@@ -16,6 +16,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Exchange2
 
+# Bromite
+ifeq ($(BUILD_GAPPS), false)
+PRODUCT_PACKAGES += \
+    Bromite
+endif
+
 # Additional apps
 PRODUCT_PACKAGES += \
     RetroMusicPlayer \
